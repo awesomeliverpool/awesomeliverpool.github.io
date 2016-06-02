@@ -1,0 +1,20 @@
+$color-awesome-pink: #ff1e82;
+$color-awesome-orange: #F5B934;
+$color-awesome-gunmetal: #1D5261;
+$color-awesome-mint: #E9F1DF;
+$color-awesome-teal: #56D9CD;
+
+$high-dpi-screen: '-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi';
+
+// Font-awesome
+$fa-font-path: "../fonts/";
+
+// Bootstrap-sass
+$brand-primary: $color-awesome-pink;
+$font-family-sans-serif: Lato, Helvetica, Arial, sans-serif;
+$font-size-base: 18px;
+$headings-font-weight: 700;
+$icon-font-path: '../fonts/';
+$border-radius-base: 2px;
+$screen-lg: 9999px; // disable the top breakpoint, to keep the site at ~1000px on even the widest screens
+$grid-gutter-width: 32px;

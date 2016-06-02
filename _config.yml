@@ -1,0 +1,14 @@
+# Site settings
+title: Awesome Liverpool
+description: >
+  Do you have an awesome idea that could benefit Liverpool?
+  Well Awesome Liverpool are the people to talk to about it.
+  As well as their huge network of contacts, Awesome Liverpool
+  also gives out a new £500 no-strings-attached award, every
+  single month, to the most awesome applicants.
+baseurl: ""
+mailchimp_post_url: '//awesomeliverpool.us8.list-manage.com/subscribe/post?u=f062d0e725b566a1a68eae970&amp;id=3dfec013c7'
+
+# Build settings
+markdown: kramdown
+host: 0.0.0.0 # zarino.co.uk/post/jekyll-local-network

@@ -1,0 +1,69 @@
+.section {
+    padding: 2em 0;
+
+    @media (min-height: 500px) {
+        padding: 3em 0;
+    }
+
+    @media (min-height: 600px) {
+        padding: 4em 0;
+    }
+
+    @media (min-height: 700px) {
+        padding: 5em 0;
+    }
+
+    h1, h2 {
+        margin: 0 0 0.5em 0;
+
+        @media (min-width: $screen-sm-min) {
+            margin-bottom: 0;
+        }
+    }
+
+    h2 {
+        color: $color-awesome-pink;
+
+        @media (min-width: $screen-sm-min) {
+            margin-top: -0.1em; // visually line up with other columns of text
+        }
+    }
+
+    h1 {
+        font-size: 38px;
+
+        @media (min-width: $screen-sm-min) {
+            font-size: 50px;
+        }
+
+        @media (min-width: $screen-md-min) and (min-height: 600px) {
+            font-size: 62px;
+        }
+    }
+}
+
+.section--dark {
+    color: #fff;
+    background-color: $color-awesome-gunmetal;
+
+    h2 {
+        color: #fff;
+    }
+}
+
+.section--mint {
+    background-color: $color-awesome-mint;
+
+    h2 {
+        color: $color-awesome-gunmetal;
+    }
+}
+
+.section--hero {
+    background: mix($color-awesome-orange, #fff, 10%) url('../img/hero.jpg') 50% 10% no-repeat;
+    background-size: cover;
+
+    h1 {
+        color: $color-awesome-pink;
+    }
+}

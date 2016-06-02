@@ -1,0 +1,22 @@
+<footer class="site-footer">
+  <div class="container">
+    <form class="row" action="{{ site.mailchimp_post_url }}" method="post" target="_blank">
+      <div class="col-sm-4">
+        <a href="/" class="site-logo">Awesome Liverpool</a>
+      </div>
+      <div class="col-sm-4">
+        <label for="footer-mailing-list">Join our mailing list<br>and be part of the community</label>
+      </div>
+      <div class="col-sm-4">
+        <input type="hidden" name="TYPE" value="Friend of Awesome">
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f062d0e725b566a1a68eae970_3dfec013c7" tabindex="-1" value=""></div>
+        <div class="input-group">
+          <input type="email" name="EMAIL" placeholder="you@email.com" class="form-control" id="footer-mailing-list">
+          <span class="input-group-btn">
+            <button class="btn btn-secondary" type="submit" name="subscribe">Join</button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
