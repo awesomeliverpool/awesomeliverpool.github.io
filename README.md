@@ -8,5 +8,6 @@ This is the source code for their website!
 
 ## Developer setup
 
+    git submodule update --init
     bundle install
     bundle exec jekyll serve
