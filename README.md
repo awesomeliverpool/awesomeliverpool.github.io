@@ -8,5 +8,5 @@ This is the source code for their website!
 
 ## Developer setup
 
-    gem install jekyll
-    jekyll serve
+    bundle install
+    bundle exec jekyll serve
