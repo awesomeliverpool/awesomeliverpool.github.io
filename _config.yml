@@ -11,22 +11,6 @@ baseurl: ""
 
 mailchimp_post_url: '//awesomeliverpool.us8.list-manage.com/subscribe/post?u=f062d0e725b566a1a68eae970&amp;id=3dfec013c7'
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - bootstrap/.github/
-  - bootstrap/build/
-  - bootstrap/nuget/
-  - bootstrap/site/
-  - bootstrap/*.md
-  - bootstrap/*.yml
-  - bootstrap/*.json
-
 host: 0.0.0.0 # zarino.co.uk/post/jekyll-local-network
 
 markdown: kramdown
-
-sass:
-  load_paths:
-    - _sass
-    - bootstrap/scss
