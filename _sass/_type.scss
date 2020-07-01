@@ -7,3 +7,10 @@ h2 {
         margin-bottom: 1.5rem;
     }
 }
+
+// We use these to jump to sections, with 100px
+// of breathing space above the intended destination.
+a[id] {
+    display: block;
+    transform: translate(0, -100px);
+}
