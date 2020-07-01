@@ -1,0 +1,30 @@
+.checklist {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    column-gap: 3rem;
+    row-gap: 0.75rem;
+    margin: 1.5rem 0;
+
+    @include media-breakpoint-up('sm') {
+        grid-template-columns: repeat(2, min-content);
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+
+        &:before {
+            content: "";
+            display: block;
+            flex: 0 0 auto;
+            width: 24px;
+            height: 24px;
+            background: transparent url(../img/tick.png) 50% 50% no-repeat;
+            background-image: url(../img/tick.svg), none;
+            background-size: 24px 24px;
+            margin-right: 1rem;
+        }
+    }
+}
