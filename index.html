@@ -19,8 +19,8 @@ bodyclass: home
                 <a id="apply"></a>
                 <h2>Got an awesome idea?</h2>
                 <p>Before you apply, read our guidance. It’ll&nbsp;help you make your application as good as it can possibly be!</p>
-                <p><a href="#" class="btn btn-lg btn-primary">Read our guidance</a></p>
-                <p>Then, when you’re ready, <a href="#">apply via our online form</a>.</p>
+                <p><a href="{{ site.guidance_url }}" class="btn btn-lg btn-primary">Read our guidance</a></p>
+                <p>Then, when you’re ready, <a href="{{ site.apply_url }}">apply via our online form</a>.</p>
             </div>
             <div class="action-box__secondary">
                 <h2>Not quite ready yet?</h2>
@@ -34,7 +34,7 @@ bodyclass: home
                         <button class="btn btn-lg btn-secondary d-flex align-items-center" type="submit" aria-label="Submit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="#FFF" fill-rule="nonzero"><path d="M0 10h21v4H0z"/><path d="M12.689 23.311L9.86 20.483l8.484-8.484L9.86 3.517 12.69.689 24 11.999 12.69 23.312z"/></g></svg></button>
                     </div>
                 </form>
-                <p><a href="#">View past editions of the newsletter</a></p>
+                <p><a href="{{ site.mailchimp_archive_url }}">View past editions of the newsletter</a></p>
             </div>
         </div>
 
@@ -142,7 +142,7 @@ bodyclass: home
                 <li>Bring joy to the world</li>
             </ol>
 
-            <p>If you think you have an idea that hits those criteria, <a href="#">read our guidance for top tips on making your application stand out</a>, and then <a href="#">apply online</a>.</p>
+            <p>If you think you have an idea that hits those criteria, <a href="{{ site.guidance_url }}">read our guidance for top tips on making your application stand out</a>, and then <a href="{{ site.apply_url }}">apply online</a>.</p>
         </div>
 
     </div>
