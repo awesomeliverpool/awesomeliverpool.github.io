@@ -10,6 +10,9 @@ description: >
 baseurl: ""
 
 mailchimp_post_url: '//awesomeliverpool.us8.list-manage.com/subscribe/post?u=f062d0e725b566a1a68eae970&amp;id=3dfec013c7'
+mailchimp_archive_url: 'https://us8.campaign-archive.com/home/?u=f062d0e725b566a1a68eae970&id=3dfec013c7'
+guidance_url: 'https://docs.google.com/document/d/1XhH-KwKpAiPOopeir7sW0-fzADS85PZUHTPaRme4Umk/edit'
+apply_url: 'https://www.awesomefoundation.org/en/submissions/new?chapter=liverpool'
 
 host: 0.0.0.0 # zarino.co.uk/post/jekyll-local-network
 
