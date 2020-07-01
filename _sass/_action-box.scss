@@ -1,0 +1,113 @@
+.action-box {
+    margin: -2rem 0 3rem 0;
+    box-shadow: 0 0.5rem 2rem rgba(#000, 0.1);
+
+    h2 {
+        color: $pink;
+        margin-bottom: 1rem !important;
+    }
+
+    p {
+        margin: 0 auto;
+        max-width: 26em;
+    }
+
+    * + p {
+        margin-top: 1rem;
+    }
+
+    @include media-breakpoint-up('md') {
+        margin-bottom: 4rem;
+    }
+
+    @include media-breakpoint-up('lg') {
+        margin-bottom: 5rem;
+        display: flex;
+    }
+}
+
+.action-box__primary,
+.action-box__secondary {
+    background: $white;
+    padding: 1.5rem;
+
+    @include media-breakpoint-up('lg') {
+        width: 50%;
+        padding: 2rem;
+    }
+
+    @include media-breakpoint-up('xl') {
+        padding: 3rem;
+    }
+}
+
+.action-box__primary {
+    @include border-top-radius($border-radius);
+
+    @include media-breakpoint-up('lg') {
+        border-radius: 0;
+        @include border-left-radius($border-radius);
+    }
+
+    p {
+        max-width: 20em;
+
+        a {
+            white-space: nowrap;
+        }
+    }
+}
+
+.action-box__secondary {
+    @include gradient-y(
+        #fafafa,
+        #fff,
+        0%,
+        20%
+    );
+    border-top: 2px solid #f3f3f3;
+    @include border-bottom-radius($border-radius);
+
+    h2 + p {
+        max-width: 21.5em;
+    }
+
+    form {
+        text-align: left;
+        margin: 1rem auto;
+        max-width: 26em;
+
+        label {
+            font-weight: bold;
+            margin-bottom: 0.25rem;
+        }
+
+        .form-control {
+            min-width: 0;
+        }
+    }
+
+    @include media-breakpoint-up('lg') {
+        @include gradient-x(
+            #fafafa,
+            #fff,
+            0%,
+            20%
+        );
+        border-top: none;
+        border-left: 2px solid #f3f3f3;
+        border-radius: 0;
+        @include border-right-radius($border-radius);
+    }
+}
+
+.action-box-overlap {
+    padding-top: 0 !important;
+
+    &:before {
+        content: "";
+        display: block;
+        height: 2rem;
+        background-color: $pink;
+    }
+}

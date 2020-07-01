@@ -11,34 +11,34 @@ bodyclass: home
     </div>
 </div>
 
-<div class="site-section site-section--off-white text-center">
+<div class="site-section site-section--off-white action-box-overlap text-center">
     <div class="container">
 
-        <div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <h2>Got an awesome idea?</h2>
-                    <p>Before you apply, read our guidance. It’ll help you make your application as good as it can possibly be!</p>
-                    <p><a href="#" class="btn">Read our guidance before you apply</a></p>
-                    <p>Then, when you’re ready, <a href="#">apply via our online form</a>.</p>
-                </div>
-                <form class="col-sm-6" action="{{ site.mailchimp_post_url }}" method="post">
-                    <h2>Not quite ready yet?</h2>
-                    <p>Don‘t worry. Follow our email newsletter for tips and inspiration every few months, and then apply in the future.</p>
+        <div class="action-box">
+            <div class="action-box__primary">
+                <h2>Got an awesome idea?</h2>
+                <p>Before you apply, read our guidance. It’ll&nbsp;help you make your application as good as it can possibly be!</p>
+                <p><a href="#" class="btn btn-lg btn-primary">Read our guidance</a></p>
+                <p>Then, when you’re ready, <a href="#">apply via our online form</a>.</p>
+            </div>
+            <div class="action-box__secondary">
+                <h2>Not quite ready yet?</h2>
+                <p>Don‘t worry. Follow our email newsletter for tips and inspiration every few months, and then apply in the future.</p>
+                <form action="{{ site.mailchimp_post_url }}" method="post">
                     <input type="hidden" name="TYPE" value="Friend of Awesome">
                     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f062d0e725b566a1a68eae970_3dfec013c7" tabindex="-1" value=""></div>
-                    <div class="form-inline justify-content-center">
-                        <label for="email">Your email</label>
-                        <input type="email" name="EMAIL" id="email" class="form-control mx-sm-3">
-                        <button class="btn btn-secondary" type="submit">Follow</button>
+                    <label for="email">Your email address</label>
+                    <div class="d-flex justify-content-center">
+                        <input type="email" name="EMAIL" id="email" class="form-control form-control-lg mr-3">
+                        <button class="btn btn-lg btn-secondary d-flex align-items-center" type="submit" aria-label="Submit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="#FFF" fill-rule="nonzero"><path d="M0 10h21v4H0z"/><path d="M12.689 23.311L9.86 20.483l8.484-8.484L9.86 3.517 12.69.689 24 11.999 12.69 23.312z"/></g></svg></button>
                     </div>
-                    <p><a href="#">View past editions of the newsletter</a></p>
                 </form>
+                <p><a href="#">View past editions of the newsletter</a></p>
             </div>
         </div>
 
         <h2>Some of the projects we’ve supported since 2014</h2>
-        <div class="row row-cols-1 row-cols-md-3 text-left">
+        <div class="row row-cols-1 row-cols-md-3 text-left winners">
             <div class="col mb-4">
                 {% include project-card.html title="ROOT-ed Zine | Work Issue" date="May 2020" url="https://www.awesomefoundation.org/en/projects/143154-root-ed-zine-work-issue" image="rooted.jpg" %}
             </div>
@@ -46,7 +46,16 @@ bodyclass: home
                 {% include project-card.html title="Incredible Edible Knowsley" date="May 2020" url="https://www.awesomefoundation.org/en/projects/143330-incredible-edible-knowsley" image="incredible-edible.jpg" %}
             </div>
             <div class="col mb-4">
+                {% include project-card.html title="Webster’s Triangle: Herbs for Picton" date="January 2020" url="https://www.awesomefoundation.org/en/projects/136405-webster-s-triangle-herbs-for-picton" image="websters-triangle.jpg" %}
+            </div>
+            <div class="col mb-4">
+                {% include project-card.html title="Merseyside Dementia Friendly Radio" date="November 2019" url="https://www.awesomefoundation.org/en/projects/131064-merseyside-dementia-friendly-radio" image="mdfr.jpg" %}
+            </div>
+            <div class="col mb-4">
                 {% include project-card.html title="My City: Creative Writing Storytelling" date="March 2019" url="https://www.awesomefoundation.org/en/projects/116784-my-city-creative-writing-storytelling-persian" image="persian-storytelling.jpg" %}
+            </div>
+            <div class="col mb-4">
+                {% include project-card.html title="Kick-ass Community Christmas Dinner" date="November 2018" url="https://www.awesomefoundation.org/en/projects/109019-kick-ass-community-christmas-dinner" image="community-christmas-dinner.jpg" %}
             </div>
         </div>
         <a href="https://www.awesomefoundation.org/en/chapters/liverpool" class="btn btn-primary">See all our winning projects</a>
