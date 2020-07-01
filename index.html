@@ -3,6 +3,99 @@ layout: default
 bodyclass: home
 ---
 
-<div class="container">
-  <h1>Awesome Liverpool</h1>
+<div class="site-section site-section--hero text-center">
+    <div class="container">
+
+        <img src="{{ '/assets/img/hero.svg' | relative_url }}" width="610" height="418" alt="We’re a bunch of regular scousers who pool our money so we can give away £500 every month to imaginative projects that make a real difference in the Liverpool City Region">
+
+    </div>
+</div>
+
+<div class="site-section site-section--off-white text-center">
+    <div class="container">
+
+        <div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2>Got an awesome idea?</h2>
+                    <p>Before you apply, read our guidance. It’ll help you make your application as good as it can possibly be!</p>
+                    <p><a href="#" class="btn">Read our guidance before you apply</a></p>
+                    <p>Then, when you’re ready, <a href="#">apply via our online form</a>.</p>
+                </div>
+                <form class="col-sm-6" action="{{ site.mailchimp_post_url }}" method="post">
+                    <h2>Not quite ready yet?</h2>
+                    <p>Don‘t worry. Follow our email newsletter for tips and inspiration every few months, and then apply in the future.</p>
+                    <input type="hidden" name="TYPE" value="Friend of Awesome">
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f062d0e725b566a1a68eae970_3dfec013c7" tabindex="-1" value=""></div>
+                    <div class="form-inline justify-content-center">
+                        <label for="email">Your email</label>
+                        <input type="email" name="EMAIL" id="email" class="form-control mx-sm-3">
+                        <button class="btn btn-secondary" type="submit">Follow</button>
+                    </div>
+                    <p><a href="#">View past editions of the newsletter</a></p>
+                </form>
+            </div>
+        </div>
+
+        <h2>Some of the projects we’ve supported since 2014</h2>
+        <div class="row row-cols-1 row-cols-md-3 text-left">
+            <div class="col mb-4">
+                {% include project-card.html title="ROOT-ed Zine | Work Issue" date="May 2020" url="https://www.awesomefoundation.org/en/projects/143154-root-ed-zine-work-issue" image="rooted.jpg" %}
+            </div>
+            <div class="col mb-4">
+                {% include project-card.html title="Incredible Edible Knowsley" date="May 2020" url="https://www.awesomefoundation.org/en/projects/143330-incredible-edible-knowsley" image="incredible-edible.jpg" %}
+            </div>
+            <div class="col mb-4">
+                {% include project-card.html title="My City: Creative Writing Storytelling" date="March 2019" url="https://www.awesomefoundation.org/en/projects/116784-my-city-creative-writing-storytelling-persian" image="persian-storytelling.jpg" %}
+            </div>
+        </div>
+        <a href="https://www.awesomefoundation.org/en/chapters/liverpool" class="btn btn-primary">See all our winning projects</a>
+
+    </div>
+</div>
+
+<div class="site-section site-section--white text-center" id="trustees">
+    <div class="container">
+
+        <h2>Want to go a step further and become a trustee?</h2>
+
+        <p>“Trustees” are what we call the dozen or so people who give £50 a month and help promote Awesome Liverpool to the widest possible audience, so everybody in Liverpool has the opportunity to benefit.</p>
+
+        <p>Even if you can’t give £50 a month, if you think you can help us reach new audiences we’re not currently reaching, or can add a new perspective to our judging panel, then get in touch!</p>
+
+        <h3>Our current trustees</h3>
+        <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6">
+            <div class="col mb-4">
+                {% include trustee-mugshot.html %}
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="site-section site-section--off-white">
+    <div class="container">
+
+        <h2 class="text-center">What’s the history of Awesome Liverpool?</h2>
+
+        <p>We are the Liverpool chapter of the international <a href="https://www.awesomefoundation.org">Awesome Foundation</a>.</p>
+
+        <p>In 2014, a group of friends in the Liverpool tech sector realised there wasn’t a functioning Awesome chapter in the UK yet, so they set one up. Since then, we’ve been joined by a stunning roster of volunteer trustees, from all sorts of backgrounds, each donating their time, expertise, and usually £50/mth, to help make awesome projects happen in and around Liverpool.</p>
+
+        <p>Anyone in the Liverpool City Region can apply for a £500 gift, and we particularly welcome applications from people who wouldn’t normally apply to the big funding bodies. There’s no limit to the number of times you can apply, and we’ve had a few projects that have won more than once, so that’s fine too.</p>
+
+        <p>The £500 gifts are no strings attached – there’s no reporting or checking up. We trust you to spend the £500 wisely, furthering Awesome in the universe.</p>
+
+        <p>We generally like to see projects that:</p>
+
+        <ol>
+            <li>Solve a problem</li>
+            <li>Have a clear budget</li>
+            <li>Benefit the people of Liverpool</li>
+            <li>Bring joy to the world</li>
+        </ol>
+
+        <p>If you think you have an idea that hits those criteria, <a href="#">read our guidance for top tips on making your application stand out</a>, and then <a href="#">apply online</a>.</p>
+
+    </div>
 </div>

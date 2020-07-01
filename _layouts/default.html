@@ -1,19 +1,59 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <!--[if lt IE 9]>
-    <script src="{{ '/vendor/html5shiv/html5shiv.js' | relative_url }}"></script>
-    <![endif]-->
-    <link rel="stylesheet" href="{{ layout.css | default: '/assets/css/style.css' | relative_url }}">
-  </head>
-  <body {% if page.bodyclass %}class="{{ page.bodyclass }}"{% endif %}>
-    {{ content }}
-    <script src="{{ '/vendor/jquery/jquery-3.5.1.min.js' | relative_url }}"></script>
-    <script src="{{ '/bootstrap/dist/js/bootstrap.bundle.min.js' | relative_url }}"></script>
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+        <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+        <!--[if lt IE 9]>
+        <script src="{{ '/vendor/html5shiv/html5shiv.js' | relative_url }}"></script>
+        <![endif]-->
+        <link rel="stylesheet" href="{{ layout.css | default: '/assets/css/style.css' | relative_url }}">
+    </head>
+    <body id="top" {% if page.bodyclass %}class="{{ page.bodyclass }}"{% endif %}>
+
+        <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+        <div class="site-preheader">
+            <div class="container">
+                <ul class="nav">
+                    <li class="nav-item">Awesome in the UK:</li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.awesomefoundation.org/en/chapters/birmingham">Birmingham</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.awesomefoundation.org/en/chapters/glasgow">Glasgow</a></li>
+                    <li class="nav-item"><a class="nav-link current" href="{{ '/' | relative_url }}">Liverpool</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.awesomefoundation.org/en/chapters/manchester">Manchester</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="site-header">
+            <div class="container">
+                <div class="site-header__primary">
+                    <a class="logo" href="{{ '/' | relative_url }}">Awesome Liverpool</a>
+                    <button class="toggle" type="button" aria-controls="siteHeaderSecondary" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+                </div>
+                <div class="site-header__secondary" id="siteHeaderSecondary">
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link" href="{{ '/' | relative_url}}#top">Apply for £500</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Application guidance</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ '/' | relative_url}}#trustees">Become a trustee</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        {{ content }}
+
+        <div class="site-footer text-center">
+            <div class="container">
+                <p>Awesome Liverpool</p>
+                <p>Made with <span>love</span> in Liverpool, the most boss city in the world.</p>
+            </div>
+        </div>
+
+        <script src="{{ '/vendor/jquery/jquery-3.5.1.min.js' | relative_url }}"></script>
+        <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
+    </body>
 </html>
