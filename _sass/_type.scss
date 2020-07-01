@@ -14,3 +14,29 @@ a[id] {
     display: block;
     transform: translate(0, -100px);
 }
+
+$centred-block-widths: (
+    38em,
+    44em,
+);
+
+@each $width in $centred-block-widths {
+    .text-centred-#{$width} {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: $width;
+    }
+}
+
+.heart {
+    display: inline-block;
+    height: 0;
+    width: 20px;
+    padding-top: 18px;
+    overflow: hidden;
+    background: transparent url(../img/heart.png) 0 0 no-repeat;
+    background-image: url(../img/heart.svg), none;
+    background-size: 20px 18px;
+    vertical-align: -0.2em;
+    margin: 0 0.1em;
+}

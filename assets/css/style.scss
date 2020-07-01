@@ -48,7 +48,9 @@ $baseurl: "{{ site.baseurl }}";
 
 @import "type";
 @import "img";
+@import "logo";
 @import "header";
 @import "section";
 @import "action-box";
 @import "winners";
+@import "checklist";
