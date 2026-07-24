@@ -1,0 +1,25 @@
+.trustee-wall {
+    @include list-unstyled();
+    margin-bottom: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+}
+
+.special-thanks {
+    @include list-unstyled();
+    margin-bottom: 0;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    @include media-breakpoint-up(md) {
+        grid-template-columns: repeat(2, minmax(15rem, 25rem));
+    }
+
+    strong {
+        display: block;
+    }
+}

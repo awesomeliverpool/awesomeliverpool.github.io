@@ -17,28 +17,18 @@ bodyclass: home
         <div class="action-box">
             <div class="action-box__primary">
                 <a id="apply"></a>
-                <h2>Got an awesome idea?</h2>
-                <p>Before you apply, read our guidance. It’ll&nbsp;help you make your application as good as it can possibly be!</p>
-                <p><a href="{{ site.guidance_url }}" class="btn btn-lg btn-primary">Read our guidance</a></p>
-                <p>Then, when you’re ready, <a href="{{ site.apply_url }}">apply via our online form</a>.</p>
+                <h2>Between 2014 and 2025 we gave away over £65,000 in microgrants…</h2>
+                <p>As one of the UK’s most active chapters of the international Awesome Foundation, our application form was famously simple, and all of our grants were no strings attached and reporting-free.</p>
             </div>
             <div class="action-box__secondary">
-                <h2>Not quite ready yet?</h2>
-                <p>Don‘t worry. Follow our email newsletter for tips and inspiration every few months, and then apply in the future.</p>
-                <form action="{{ site.mailchimp_post_url }}" method="post">
-                    <input type="hidden" name="TYPE" value="Friend of Awesome">
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f062d0e725b566a1a68eae970_3dfec013c7" tabindex="-1" value=""></div>
-                    <label for="email">Your email address</label>
-                    <div class="d-flex justify-content-center">
-                        <input type="email" name="EMAIL" id="email" class="form-control form-control-lg mr-3">
-                        <button class="btn btn-lg btn-secondary d-flex align-items-center" type="submit" aria-label="Submit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="#FFF" fill-rule="nonzero"><path d="M0 10h21v4H0z"/><path d="M12.689 23.311L9.86 20.483l8.484-8.484L9.86 3.517 12.69.689 24 11.999 12.69 23.312z"/></g></svg></button>
-                    </div>
-                </form>
-                <p><a href="{{ site.mailchimp_archive_url }}">View past editions of the newsletter</a></p>
+                <h2>…But sadly, we closed in 2026</h2>
+                <p>After our last Dean stepped down in December 2025, we took the difficult decision to put Awesome Liverpool into hibernation until a new group of trustees could come along.</p>
+                <p><a href="#restart" class="btn btn-lg btn-primary">Interested in restarting it?</a></p>
             </div>
         </div>
 
-        <h2>Some of the projects we’ve supported since 2014</h2>
+        <a id="projects"></a>
+        <h2>Some of the projects we supported between 2014 and 2025</h2>
         <div class="row row-cols-1 row-cols-md-3 text-left winners">
             <div class="col mb-4">
                 {% include project-card.html title="Liverpool Community Radio" date="March 2025" url="https://www.awesomefoundation.org/en/projects/338749-liverpool-community-radio" image="lcr-fm.jpg" %}
@@ -73,82 +63,104 @@ bodyclass: home
     </div>
 </div>
 
-<div class="site-section site-section--white border-top border-bottom text-center">
-    <div class="container">
+<div class="site-section site-section--white border-top border-bottom">
+    <div class="container" style="max-width: 44rem">
 
-        <a id="trustees"></a>
-        <h2>Want to go a step further and become a trustee?</h2>
+        <a id="history"></a>
+        <h2>What’s the history of Awesome Liverpool?</h2>
 
-        <div class="text-centred-44em">
-            <p>Our “trustees” aren’t trustees in any official sense. They’re just regular people with a passion for making Liverpool more awesome. Most trustees pay £50 a month into the Awesome Liverpool pot, but we’re also happy for trustees to contribute in other ways, like organising applicant comms, or running our social media.</p>
-            <p>We’re always open to new trustees – especially ones who can help us reach new audiences we’re not currently reaching, or can add a new perspective to our panel. There are no qualification requirements for being a trustee.</p>
-            <p>If you want to talk to us about becoming an Awesome Liverpool trustee, email <a href="mailto:liverpool@awesomefoundation.org">liverpool@awesomefoundation.org</a> – we’d love to talk to you!</p>
-        </div>
+        <p>We were the Liverpool chapter of the international <a href="https://www.awesomefoundation.org">Awesome Foundation</a>.</p>
 
-        <h3 class="text-pink mt-6 mb-0">Our current trustees</h3>
-        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 justify-content-center">
-            <div class="col mt-5">
-                {% include trustee-mugshot.html name="Andrew Beattie" image="andrew-beattie.jpg" %}
-            </div>
-            <div class="col mt-5">
-                {% include trustee-mugshot.html name="Jubeda Khatun" image="jubeda-khatun.jpg" %}
-            </div>
-            <div class="col mt-5">
-                {% include trustee-mugshot.html name="Jonathan Deamer" image="jonathan-deamer.jpg" %}
-            </div>
-            <div class="col mt-5">
-                {% include trustee-mugshot.html name="Julian Moss" image="julian-moss.jpg" %}
-            </div>
-            <div class="col mt-5">
-                {% include trustee-mugshot.html name="Laura Prior" image="laura-prior.jpg" %}
-            </div>
-            <div class="col mt-5">
-                {% include trustee-mugshot.html name="Miranda Melcher" image="miranda-melcher.jpg" %}
-            </div>
-            <div class="col mt-5">
-                {% include trustee-mugshot.html name="Roz Dean" image="roz-dean.jpg" %}
-            </div>
-            <div class="col mt-5">
-                {% include trustee-mugshot.html name="Mark Swift" image="mark-swift.jpg" %}
-            </div>
-            <div class="col mt-5">
-                {% include trustee-mugshot.html name="Sally-Anne Watkiss" image="sally-anne-watkiss.jpg" %}
-            </div>
-            <div class="col mt-5">
-                {% include trustee-mugshot.html name="Zarino Zappia" image="zarino-zappia.png" %}
-            </div>
-        </div>
+        <p>In 2014, a group of friends in the Liverpool tech sector realised there wasn’t a functioning Awesome chapter in the UK yet, so they set one up. For over a decade after that, we were joined by a stunning roster of volunteer trustees, from all sorts of backgrounds, each donating their time, expertise, and usually £50 a month, to help make awesome projects happen in and around Liverpool.</p>
 
-        <p class="mt-6 text-muted mx-auto" style="font-size: 0.8em; max-width: 58em;">Thanks also to our trustees emeritus, who are now pursuing their own avenues of awesomness elsewhere in the world: Francis Irving, Ross Jones, Simon Holgate, Wayne Malcolm, Bridget Waters, David Worral, Kate Stewart, Graham Haywood, Charles Oddy, Nicola Wass, David Parrish, David Williams &amp; Oliver Press, Nathan Pearson, Lynne Robertson, Jim Noakes, Mark Hodgson, Robyn Dooley, Lucy Chesters, Alex Kelly, Laura Marie-Brown, Ian Parry, Alison Lockett-Burke, Lee Omar, Mark Russell, Nick Graham, Laura David, Andrea Ku, the Baltic Creative team, Leon Rossiter, Amber Jones-Eddy, Ruth Hartnoll, John Maguire, Mark Sabino, Louisa Burman, Charlotte Ray, Sally Brajkovich, Lucy Gardner, and Rebecca Taylor.</p>
+        <p>Anyone in the Liverpool City Region could apply for a £500 gift, and we particularly welcomed applications from people who wouldn’t normally apply to the big funding bodies. There was no limit to the number of times you could apply (or the number of times you could win) and we judged each application on its own merits.</p>
+
+        <p>We generally liked to see projects that:</p>
+
+        <ol class="checklist">
+            <li>Solved a problem</li>
+            <li>Had a clear budget</li>
+            <li>Benefitted Liverpool</li>
+            <li>Brought joy to the world</li>
+        </ol>
+
+        <p>Our £500 gifts were no strings attached – there was no reporting or checking up. We trusted our winners to spend the £500 wisely, furthering Awesome in the universe.</p>
+
+        <p>And <em>boy</em> did they do just that. You can <a href="https://www.awesomefoundation.org/en/chapters/liverpool">see all of our winners on the Awesome Foundation website</a>.</p>
+
+        <h3 class="text-pink mt-7 mb-4">Our trustees, 2014–2025</h3>
+
+        <ol class="trustee-wall">
+            <li>Ross Jones</li>
+            <li>Wayne Malcolm</li>
+            <li>Bridget Waters</li>
+            <li>Leon Rossiter</li>
+            <li>Lee Omar</li>
+            <li>Kate Stewart</li>
+            <li>Graham Haywood</li>
+            <li>Charles Oddy</li>
+            <li>David Worral</li>
+            <li>Nicola Wass</li>
+            <li>David Parrish</li>
+            <li>David Williams &amp; Oliver Press</li>
+            <li>Nathan Pearson</li>
+            <li>Jim Noakes</li>
+            <li>Mark Hodgson</li>
+            <li>Lynne Robertson</li>
+            <li>Robyn Dooley</li>
+            <li>Lucy Chesters</li>
+            <li>Alex Kelly</li>
+            <li>Laura Marie-Brown</li>
+            <li>Ian Parry</li>
+            <li>Alison Lockett-Burke</li>
+            <li>Mark Russell</li>
+            <li>Mark Sabino</li>
+            <li>Laura David</li>
+            <li>Louisa Burman</li>
+            <li>the Baltic Creative team</li>
+            <li>Nick Graham</li>
+            <li>Julian Moss</li>
+            <li>Andrea Ku</li>
+            <li>Jubeda Khatun</li>
+            <li>Sally-Anne Watkiss</li>
+            <li>Amber Jones-Eddy</li>
+            <li>Roz Dean</li>
+            <li>Ruth Hartnoll</li>
+            <li>John Maguire</li>
+            <li>Charlotte Ray</li>
+            <li>Mark Swift</li>
+            <li>Sally Brajkovich</li>
+            <li>Lucy Gardner</li>
+            <li>Rebecca Taylor</li>
+            <li>Laura Prior</li>
+            <li>Jonathan Deamer &amp; Miranda Melcher</li>
+        </ol>
+
+        <h3 class="text-pink mt-7 mb-4">And a very special thanks to founding trustees:</h3>
+
+        <ul class="special-thanks">
+            <li><strong>Francis Irving</strong> Who started us all on this crazy journey after seeing Tim Hwang speak at a conference in the USA, and acted as the chapter’s first ‘Dean’ (organiser) from 2014–2018.</li>
+            <li><strong>Simon Holgate</strong> Who calmed our finalists’ nerves and kept everything running smoothly as compère at our gift nights in the beautiful Leaf on Bold Street (RIP).</li>
+            <li><strong>Andrew Beattie</strong> Who was always the most wonderful friend, advisor, and confidant to the other trustees, and the man with the best contacts in the city.</li>
+            <li><strong>Zarino Zappia</strong> Who made this website, and served as the chapter’s new organiser from 2018 until its closure in 2025.</li>
+        </ul>
 
     </div>
 </div>
 
 <div class="site-section site-section--off-white">
-    <div class="container">
+    <div class="container" style="max-width: 44rem">
 
-        <h2 class="text-center">What’s the history of Awesome Liverpool?</h2>
+        <a id="restart"></a>
+        <h2>Want to make Liverpool awesome again?</h2>
 
-        <div class="text-centred-44em">
-            <p>We are the Liverpool chapter of the international <a href="https://www.awesomefoundation.org">Awesome Foundation</a>.</p>
+        <p>While Awesome Liverpool has been in hiberation since December 2025, we’d love a new group of trustees to come along and restart it.</p>
 
-            <p>In 2014, a group of friends in the Liverpool tech sector realised there wasn’t a functioning Awesome chapter in the UK yet, so they set one up. Since then, we’ve been joined by a stunning roster of volunteer trustees, from all sorts of backgrounds, each donating their time, expertise, and usually £50 a month, to help make awesome projects happen in and around Liverpool.</p>
+        <p>We have a model constitution you could re-use (technically we were only ever an ‘unincorporated association’ and our ‘trustees’ weren’t trustees in any formal sense), as well as a Gmail account, social media profiles, and GoCardless account you could use.</p>
 
-            <p>Anyone in the Liverpool City Region can apply for a £500 gift, and we particularly welcome applications from people who wouldn’t normally apply to the big funding bodies. There’s no limit to the number of times you can apply (or the number of times you can win) and we judge each application on its own merits.</p>
+        <p>All you’d need to do is bring a couple of like-minded friends, each happy to donate a set amount (we chose £50) each month, and a load of enthusiasm to recruit a full roster of 10 trustees, and start promoting the chapter again.</p>
 
-            <p>The £500 gifts are no strings attached – there’s no reporting or checking up. We trust you to spend the £500 wisely, furthering Awesome in the universe.</p>
-
-            <p>We generally like to see projects that:</p>
-
-            <ol class="checklist">
-                <li>Solve a problem</li>
-                <li>Have a clear budget</li>
-                <li>Benefit Liverpool</li>
-                <li>Bring joy to the world</li>
-            </ol>
-
-            <p>If you think you have an idea that hits those criteria, <a href="{{ site.guidance_url }}">read our guidance for top tips on making your application stand out</a>, and then <a href="{{ site.apply_url }}">apply online</a>.</p>
-        </div>
+        <p>If you’re interested, email <a href="mailto:liverpool@awesomefoundation.org">liverpool@awesomefoundation.org</a>.</a>
 
     </div>
 </div>
